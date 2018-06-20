@@ -3,14 +3,71 @@
 
 :root {
   --flatBrown: #825a2c;
-  --screenSize: 500px;
-  --grey: #95a5a6;
+  --lightBrown: #e6ded4;
+  --darkBrown: #412d16;
   --activeGrey: #7f8c8d;
+  --borderRadius: 4px;
 }
 
 body {
   background-color: var(--flatBrown);
   font-family: 'Roboto', sans-serif;
+  color: var(--darkBrown);
+  text-align: center;
+}
+
+#container {
+    background-color: var(--lightBrown);
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    border-radius: var(--borderRadius);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  padding-top: 40px;
+}
+
+#input {
+    padding-top: 20px;
+}
+
+#water-metric {
+    border-radius: var(--borderRadius);
+    padding: 8px;
+    border: none;
+    color: var(--darkBrown);
+}
+
+#water-amount {
+    border-radius: var(--borderRadius);
+    padding: 8px;
+    border: none;
+    color: var(--darkBrown);
+    width: 64px;
+}
+
+.button {
+    width: 160px;
+    padding: 8px;
+    margin: 24px 8px;
+    border-style: none;
+    border-radius: var(--borderRadius);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--darkBrown);
+}
+
+.button:hover {
+  background-color: var(--flatBrown);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:active {
+  background-color: var(--darkBrown);
+  box-shadow: none;
 }
 
 #result-display {
