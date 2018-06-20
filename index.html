@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <body>
-    <div>
+    <div id="container">
       <h1>Cold Brew Calculator</h1>
-      <div>
+      <div id="input">
         <input id="water-amount" type="number">
         <select id="water-metric">
+          <option value="1">ounces</option>
           <option value="8">cups</option>
           <option value="16">pints</option>
           <option value="32">quarts</option>
           <option value="128">gallons</option>
         </select>
       </div>
-      <button onclick="makeCoffee()">Coffee Time</button>
+      <button class="button" onclick="makeCoffee()">Make Coffee!</button>
       <div id="result-display">
         <p>I recommend <span id="result"></span> of coarsely ground coffee beans!</p>
       </div>
