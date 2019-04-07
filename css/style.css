@@ -17,12 +17,16 @@ body {
 }
 
 #container {
-    background-color: var(--lightBrown);
-    width: 600px;
-    height: 700px;
-    margin: auto;
-    border-radius: var(--borderRadius);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--lightBrown);
+  height: 65vh;
+  min-height: 400px;
+  margin: 20px auto;
+  border-radius: var(--borderRadius);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -30,34 +34,34 @@ h1 {
 }
 
 #input {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #water-metric {
-    border-radius: var(--borderRadius);
-    padding: 8px;
-    border: none;
-    color: var(--darkBrown);
+  border-radius: var(--borderRadius);
+  padding: 8px;
+  border: none;
+  color: var(--darkBrown);
 }
 
 #water-amount {
-    border-radius: var(--borderRadius);
-    padding: 8px;
-    border: none;
-    color: var(--darkBrown);
-    width: 64px;
+  border-radius: var(--borderRadius);
+  padding: 8px;
+  border: none;
+  color: var(--darkBrown);
+  width: 64px;
 }
 
 .button {
-    width: 160px;
-    padding: 8px;
-    margin: 24px 8px;
-    border-style: none;
-    border-radius: var(--borderRadius);
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: var(--darkBrown);
+  width: 160px;
+  padding: 8px;
+  margin: 24px 8px;
+  border-style: none;
+  border-radius: var(--borderRadius);
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--darkBrown);
 }
 
 .button:hover {
@@ -70,10 +74,8 @@ h1 {
   box-shadow: none;
 }
 
-#result-display {
-    display: none;
-}
-
-#result {
-    font-weight: bold;
+@media only screen and (min-width: 500px) {
+  #container {
+    max-width: 500px;
+  }
 }

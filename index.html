@@ -1,27 +1,51 @@
 <!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Coffee.bean</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <html lang="en-US">
   <title>Coffee.bean</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <body>
-    <div id="container">
+    <div id="container" class="col-md-6">
       <h1>Cold Brew Calculator</h1>
       <div id="input">
-        <input id="water-amount" type="number">
-        <select id="water-metric">
-          <option value="1">ounces</option>
-          <option value="8">cups</option>
-          <option value="16">pints</option>
-          <option value="32">quarts</option>
-          <option value="128">gallons</option>
-        </select>
+        <div class="row justify-content-md-center">
+          <div class="input-group col-md-6">
+            <div class="input-group-prepend">
+              <div class="input-group-text" id="btnGroupAddon2">Ratio</div>
+            </div>
+            <select id="select-ratio" class="custom-select">
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="input-group col-md-6">
+            <div class="input-group-prepend">
+              <input id="water-amount" type="number">
+            </div>
+            <select id="select-metric" class="custom-select">
+            </select>
+          </div>
+        </div>
       </div>
-      <button class="button" onclick="makeCoffee()">Make Coffee!</button>
+      <button class="button col-md-4" onclick="makeCoffee()">Make Coffee!</button>
       <div id="result-display">
-        <p>I recommend <span id="result"></span> of coarsely ground coffee beans!</p>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
 
